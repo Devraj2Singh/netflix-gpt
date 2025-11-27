@@ -6,6 +6,7 @@ This project includes authentication, personalized browsing, and an AI-powered s
 ---
 
 ## 🚀 Tech Stack
+
 - **React (CRA)**
 - **TailwindCSS**
 - **Firebase Authentication**
@@ -16,27 +17,30 @@ This project includes authentication, personalized browsing, and an AI-powered s
 ## ⭐ Features
 
 ### 🔐 Authentication
-- Sign In / Sign Up form  
-- Validation & error handling  
-- Redirects to Browse page after login  
+
+- Sign In / Sign Up form
+- Validation & error handling
+- Redirects to Browse page after login
 
 ---
 
 ### 🎥 Browse Page (Only after Authentication)
+
 - Responsive **Header**
 - **Main Movie section**
-  - Trailer playing in the background  
-  - Movie Title & Description overlay  
+  - Trailer playing in the background
+  - Movie Title & Description overlay
 - **Movie Suggestions**
-  - Multiple category-wise movie lists  
+  - Multiple category-wise movie lists
   - Smooth horizontal carousels (MovieList × N)
 
 ---
 
 ### 🤖 Netflix GPT (AI-powered Search)
-- Smart Search Bar  
-- GPT-based movie suggestions  
-- Real-time results & smooth UI  
+
+- Smart Search Bar
+- GPT-based movie suggestions
+- Real-time results & smooth UI
 
 ---
 
@@ -45,3 +49,4 @@ This project includes authentication, personalized browsing, and an AI-powered s
 ```bash
 npm install
 npm start
+```
