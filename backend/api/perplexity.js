@@ -23,6 +23,11 @@ app.post("/api/perplexity", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Backend is live and running on Vercel!");
+});
+
+
 //app.listen(5000, () => console.log('Server on 5000'));
 
 module.exports = app;
