@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import {getAuth} from "firebase/auth";
+import { getAuth } from "firebase/auth";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -15,7 +15,7 @@ const firebaseConfig = {
   storageBucket: "netflixgpt-38115.firebasestorage.app",
   messagingSenderId: "911920495924",
   appId: "1:911920495924:web:661bc31868d53052537961",
-  measurementId: "G-X1ZYKWPK2P"
+  measurementId: "G-X1ZYKWPK2P",
 };
 
 // Initialize Firebase

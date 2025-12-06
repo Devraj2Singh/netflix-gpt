@@ -62,8 +62,8 @@ const Header = () => {
   }
 
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between items-center">
-      <img className="w-44" src={LOGO} alt="logo" />
+    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row justify-center md:justify-between items-center">
+      <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
 
       {user && (
         <div className="relative flex items-center gap-2" ref={menuRef}>
@@ -76,10 +76,10 @@ const Header = () => {
           </select>)}
 
           <button
-            className="text-white py-2 px-4 m-2 bg-blue-800 hover:bg-blue-900 rounded-lg"
+            className="text-white py-2 px-4 m-2 bg-purple-600 hover:bg-purple-700 rounded-lg transition"
             onClick={handleGptSearchClick}
           >
-           {showGptSearch? "Homepage" : "Perplexity Search ✨"}
+           {showGptSearch? "Homepage" : "AI Search ✨"}
           </button>
 
           {/* Avatar */}
