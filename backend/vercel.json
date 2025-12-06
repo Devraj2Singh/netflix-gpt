@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
         {
-            "src": "api/perplexity.js",
+            "src": "api/index.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "api/perplexity.js"
+            "dest": "api/index.js"
         }
     ]
 }
