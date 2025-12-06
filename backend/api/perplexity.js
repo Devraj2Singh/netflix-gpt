@@ -6,6 +6,15 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(
+  cors({
+    origin:
+      "https://netflix-290r8zlod-devraj-singhs-projects-cfcd9b87.vercel.app",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.post("/api/perplexity", async (req, res) => {
   try {
     const response = await fetch("https://api.perplexity.ai/chat/completions", {
@@ -26,7 +35,5 @@ app.post("/api/perplexity", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("Backend is live and running on Vercel!");
 });
-
-
 
 module.exports = app;
