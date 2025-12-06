@@ -73,13 +73,13 @@ Backend API (if needed): http://localhost:5000
 
 ⚠️ Make sure you do not commit any .env files or API keys to GitHub. Use .gitignore to ignore them.
 
-📁 Project Structure (Monorepo)
+# 📁 Project Structure (Monorepo)
 bash
 Copy code
-Netflix-GPT/
-├── backend/        # Express + API + AI logic
-├── frontend/       # React + UI + Browsing + Trailers + Search
-└── README.md       # This file
+-Netflix-GPT/
+-├── backend/        -# Express + API + AI logic
+-├── frontend/       -# React + UI + Browsing + Trailers + Search
+-└── README.md       -# This file
 💡 Notes & Best Practices
 .env files (API keys) are intentionally excluded from version control — keep them local.
 
