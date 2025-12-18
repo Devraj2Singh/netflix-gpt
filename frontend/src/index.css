@@ -13,3 +13,44 @@
     scrollbar-width: none;
   }
   
+ /* Base shimmer block */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(39, 39, 42, 0.9); /* near zinc-800 */
+}
+
+/* Shimmer animation */
+.shimmer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.18) 40%,
+    rgba(255, 255, 255, 0.04) 60%,
+    transparent 100%
+  );
+  animation: shimmer 1.1s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Perplexity-style avatar shimmer (uses your PNG) */
+.shimmer-avatar {
+  background-image: url("https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Netflix-style card look: darker tiles, softer radius */
+.shimmer-card {
+  border-radius: 0.75rem;
+  background-color: #111827; /* slate-900 / Netflix dark */
+}
